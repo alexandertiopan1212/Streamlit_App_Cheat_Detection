@@ -1,85 +1,79 @@
+# CHEATDETECTION - Online Exam Cheating Detection App
 
-# 🕵️‍♂️ Streamlit App: Cheat Detection for Online Exams
+A Streamlit-based web application that detects cheating behavior during online exams using computer vision, gaze tracking, facial recognition, and deep learning models.
 
-**CHEATDETECTION** adalah aplikasi berbasis Streamlit yang dirancang untuk mendeteksi potensi kecurangan dalam pelaksanaan tes atau ujian online. Aplikasi ini memanfaatkan teknologi **OpenCV**, **Deep Learning**, serta **gaze tracking** dan pengenalan wajah untuk mendeteksi aktivitas mencurigakan selama ujian berlangsung.
+## 📌 Features
 
-## 🚀 Fitur Utama
+- **User Authentication**: Supports participant and supervisor login with role-based access.
+- **Proctoring System**: Automatically monitors test-takers during exams using webcam feed.
+- **Cheating Detection**:
+  - Detects head turns and eye movement.
+  - Captures screenshots on suspicious behavior.
+  - Records time, type of behavior, and visual evidence.
+- **Supervisor Dashboard**:
+  - View detailed cheating reports.
+  - Analyze participant behavior with interactive visualizations.
+  - Download logs and screenshots for documentation.
+- **Clean Interface**: Built using Streamlit and AgGrid for a responsive and interactive UI.
 
-- 🔐 **Login Akun**: Akses peserta dan pengawas berbeda.
-- 🎥 **Monitoring Real-Time**: Mendeteksi perilaku mencurigakan seperti melihat ke samping, tidak melihat layar, dan banyak lagi.
-- 📸 **Pengambilan Screenshot Otomatis**: Menyimpan bukti visual dari momen mencurigakan.
-- 📄 **Laporan dan Analisis**: Menampilkan data hasil pengawasan dalam bentuk tabel dan visualisasi interaktif menggunakan Plotly.
-- 📤 **Ekspor CSV**: Laporan dapat diunduh untuk keperluan dokumentasi atau audit.
+## 🛠️ Technologies Used
 
-## 🧰 Teknologi yang Digunakan
+- **Frontend/UI**: Streamlit, Plotly, st-aggrid
+- **Computer Vision**: OpenCV, dlib
+- **Machine Learning/AI**: TensorFlow / Keras
+- **Facial Analysis**: Gaze tracking, facial landmarks, and object detection
 
-- `Python`
-- `Streamlit`
-- `OpenCV`
-- `Deep Learning (dlib, face landmarks)`
-- `Pandas`, `Numpy`
-- `Plotly`, `st_aggrid`
-
-## 📁 Struktur Direktori
+## 📂 Folder Structure
 
 ```
-├── main.py
-├── facemain.py
-├── facedetector.py
-├── facetraining.py
-├── facerecognition.py
-├── facelandmarks.py
-├── objectdetection.py
-├── mouthdetector.py
-├── dataset/
-├── models/
-├── img/
-├── trainer/
-├── gaze_tracking/
-├── Cascades/
+├── Cascades/               # Haarcascade XML files
+├── dataset/                # Dataset for face detection
+├── gaze_tracking/          # Gaze tracking logic
+├── models/                 # Pre-trained models
+├── trainer/                # Face training logic
+├── img/                    # Screenshot outputs
+├── main.py                 # Streamlit app launcher
+├── facemain.py             # Main logic for camera + detection
+├── facerecognition.py      # Face recognition functions
+├── facetraining.py         # Face model trainer
+├── objectdetection.py      # Eye/mouth detection
 ├── requirements.txt
 └── README.md
 ```
 
-## 🧪 Cara Menjalankan
+## 🚀 How to Run
 
-1. Clone repository ini:
-    ```bash
-    git clone https://github.com/alexandertiopan1212/Streamlit_App_Cheat_Detection.git
-    cd Streamlit_App_Cheat_Detection
-    ```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alexandertiopan1212/Streamlit_App_Cheat_Detection.git
+   cd Streamlit_App_Cheat_Detection
+   ```
 
-2. Buat virtual environment dan install dependensi:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Jalankan aplikasi:
-    ```bash
-    streamlit run main.py
-    ```
+3. Make sure your system has:
+   - Webcam access
+   - Python 3.7+
+   - Compatible environment (Windows preferred for dlib .whl)
 
-## 🧪 Akun Uji Coba
+4. Run the app:
+   ```bash
+   streamlit run main.py
+   ```
 
-| Role      | Username  | Password |
-|-----------|-----------|----------|
-| Peserta   | raff      | 123      |
-| Peserta   | Dyah      | 123      |
-| Peserta   | Yusuf     | 123      |
-| Pengawas  | Pengawas  | 123      |
+## 👥 Default Login Accounts
 
-## 📸 Contoh Screenshot
+| Username  | Password | Role      |
+|-----------|----------|-----------|
+| raff      | 123      | Student   |
+| Dyah      | 123      | Student   |
+| Yusuf     | 123      | Student   |
+| Pengawas  | 123      | Supervisor|
 
-_Tambahkan contoh screenshot antarmuka aplikasi dan hasil deteksi di sini._
+## 📊 Example Output
 
----
-
-## 🏷️ Tags
-
-`streamlit` `cheating detection` `online exam` `opencv` `face detection` `gaze tracking` `deep learning` `education tech` `python project`
-
-## 👨‍💻 Kontributor
-
-- **Alexander Tiopan** – _Developer & AI Engineer_
-
----
+- Real-time detection of face movements and gaze direction
+- Report table with screenshots and timestamps of suspicious behavior
