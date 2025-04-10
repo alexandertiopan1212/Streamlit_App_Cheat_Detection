@@ -1,15 +1,12 @@
-Dlib-bin
-numpy
-opencv_contrib_python
-opencv_python
-pandas
-Pillow
-Pillow
-plotly
-plyer
-streamlit
-streamlit-aggrid
-tensorflow
-wget
-pylibsrtp
-streamlit-webrtc
+streamlit==1.25.0
+streamlit-webrtc==0.47.1
+streamlit-aggrid==0.3.4
+numpy==1.23.5
+pandas==1.5.3
+Pillow==9.5.0
+plotly==5.18.0
+plyer==2.1.0
+tensorflow==2.12.0
+wget==3.2
+--no-binary opencv-contrib-python
+opencv-python-headless==4.8.1.78
