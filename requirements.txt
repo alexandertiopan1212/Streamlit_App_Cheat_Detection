@@ -1,0 +1,15 @@
+Dlib-bin
+numpy
+opencv_contrib_python
+opencv_python
+pandas
+Pillow
+Pillow
+plotly
+plyer
+streamlit
+streamlit-aggrid
+tensorflow
+wget
+pylibsrtp
+streamlit-webrtc
