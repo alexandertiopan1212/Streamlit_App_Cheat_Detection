@@ -10,3 +10,4 @@ tensorflow==2.12.0
 wget==3.2
 --no-binary opencv-contrib-python
 opencv-python-headless==4.8.1.78
+mediapipe==0.10.9
