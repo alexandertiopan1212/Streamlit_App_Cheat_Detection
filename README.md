@@ -41,6 +41,15 @@ A Streamlit-based web application that detects cheating behavior during online e
 └── README.md
 ```
 
+## Screenshots
+![image](https://github.com/user-attachments/assets/99b09cbd-482b-4000-b4c3-68bf402a38d7)
+![image](https://github.com/user-attachments/assets/4e6d6c57-caca-4741-aa31-9c8f4a2b33bb)
+![image](https://github.com/user-attachments/assets/f6e94727-ff25-4619-96fb-bb343b790018)
+![image](https://github.com/user-attachments/assets/7c317be8-0d89-48e4-aada-c512596ec6d8)
+![image](https://github.com/user-attachments/assets/601a8eb1-17a6-4d7d-8646-108eb0e2a5d2)
+
+
+
 ## 🚀 How to Run
 
 1. Clone the repository:
